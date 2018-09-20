@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Bookstore Inventory</string>
+    <string name="add_new_item">Add New Item</string>
+    <string name="enter_product_name">Product Name</string>
+    <string name="enter_quantity">Quantity</string>
+    <string name="enter_phone_number">Phone Number</string>
+    <string name="save">SAVE</string>
+    <string name="enter_price">Price</string>
+    <string name="add_an_inventory_item_to_get_started">Add an inventory item to get started</string>
+    <string name="so_empty">So empty</string>
+    <string name="price">Price:</string>
+    <string name="quantity">Quantity:</string>
+    <string name="dollor_sign">$</string>
+    <string name="supplier_name_edit_text">Supplier Name</string>
+    <string name="money_tv">$</string>
+    <string name="delete">delete</string>
+    <string name="_default_phone_num">3237348869</string>
+    <string name="supplier_phone_number">Supplier Phone Number</string>
+    <string name="_sample_suplier">Sample Suplier</string>
+    <string name="_supplier">Supplier</string>
+    <string name="sample_price">Sample Price</string>
+    <string name="plus_sign">+</string>
+    <string name="qty">qty</string>
+    <string name="minus_sign">-</string>
+    <string name="sample_name">Sample Name</string>
+    <string name="product_name">Product Name</string>
+    <string name="sale">Sale</string>
+    <string name="money_text_view">$%1$s</string>
+</resources>

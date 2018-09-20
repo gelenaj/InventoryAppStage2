@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item in the list of pets -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin">
+
+    <LinearLayout
+        android:id="@+id/product_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ProductDetailsLabelStyle"
+            android:layout_width="@dimen/_63dp"
+            android:text="@string/product_name" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/_4dp">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_name" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name_layout"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ProductDetailsLabelStyle"
+            android:layout_width="@dimen/_10dp"
+            android:layout_weight=".5"
+            android:text="@string/quantity" />
+
+        <Button
+            android:id="@+id/decreaseBtn"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_weight=".10"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/minus_sign"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:paddingLeft="@dimen/_20dp">
+
+            <EditText
+                android:id="@+id/qtyTextView"
+                android:layout_width="@dimen/_60dp"
+                android:layout_height="@dimen/_38dp"
+                android:text="@string/qty"
+                android:textAlignment="viewStart" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/increaseBtn"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_38dp"
+            android:layout_weight=".10"
+            android:background="@color/colorPrimaryDark"
+            android:baselineAligned="false"
+            android:text="@string/plus_sign"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_qty"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ProductDetailsLabelStyle"
+            android:layout_width="63dp"
+            android:text="Price" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/_4dp">
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_price" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_price"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ProductDetailsLabelStyle"
+            android:layout_width="@dimen/_63dp"
+            android:text="@string/_supplier" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/_4dp">
+
+            <TextView
+                android:id="@+id/supplierTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_sample_suplier" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_supplier_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_supplier"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ProductDetailsLabelStyle"
+            android:layout_width="@dimen/_94dp"
+            android:text="@string/supplier_phone_number" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:paddingLeft="@dimen/_4dp">
+
+            <TextView
+                android:id="@+id/supplierPhoneTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/_default_phone_num" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="@dimen/_104dp"
+        android:layout_height="@dimen/_33dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/container_supplier_phone"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:background="@color/black"
+        android:text="Order"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_33dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="31dp"
+        android:background="@color/black"
+        android:text="@string/delete"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
